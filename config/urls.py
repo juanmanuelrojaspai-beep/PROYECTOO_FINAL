@@ -18,7 +18,5 @@ router.register("ventas", VentaViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),              # <- la API
-    path('reportes/', include('reportes.urls')),
-    path('', include('inventario.urls')),
+    path('api/', include(router.urls)),       
 ]
